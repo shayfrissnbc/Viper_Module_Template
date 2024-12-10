@@ -10,17 +10,18 @@
 import UIKit
 
 class ___VARIABLE_viperModuleName___Presenter: ___VARIABLE_viperModuleName___PresenterProtocol {
-
-    weak private var view: ___VARIABLE_viperModuleName___ViewProtocol?
-    private let interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol
-    private let wireframe: ___VARIABLE_viperModuleName___WireframeProtocol
-
-    init(interface: ___VARIABLE_viperModuleName___View, interactor: ___VARIABLE_viperModuleName___InteractorInputProtocol, wireframe: ___VARIABLE_viperModuleName___WireframeProtocol) {
-        self.view = interface
+    var adapter: AppAdapter?
+    private weak var view: ___VARIABLE_viperModuleName___ViewController?
+    private var interactor: ___VARIABLE_viperModuleName___InteractorProtoco?
+    private var router: ___VARIABLE_viperModuleName___RouterProtocol?
+    
+    init(viewController: UIViewController?, 
+            adapter: AppAdapter?, 
+            interactor: ___VARIABLE_viperModuleName___InteractorProtocol?,
+            router: ___VARIABLE_viperModuleName___RouterProtocol?) {
+        self.viewController = viewController
+        self.adapter = adapter
         self.interactor = interactor
-        self.wireframe = wireframe
-
-        self.interactor.presenter = self
+        self.router = router
     }
-
 }
