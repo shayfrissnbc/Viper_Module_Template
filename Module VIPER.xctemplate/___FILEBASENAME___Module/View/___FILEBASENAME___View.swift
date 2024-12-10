@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ___VARIABLE_viperModuleName___View: UIViewController, ___VARIABLE_viperModuleName___ViewProtocol {
-    var adapter: AppAdapter?
+class ___VARIABLE_viperModuleName___ViewController: UIViewController, ___VARIABLE_viperModuleName___ViewProtocol {
+    var adapter: AppTabAdapter?
 	var presenter: ___VARIABLE_viperModuleName___PresenterProtocol?
 }

@@ -7,12 +7,13 @@
 //
 //
 
+import Foundation
 import UIKit
 
-class ___VARIABLE_viperModuleName___Interactor: ___VARIABLE_viperModuleName___InteractorProtocol {
-    var adapter: AppAdapter?
+class ___VARIABLE_viperModuleName___Router: ___VARIABLE_viperModuleName___RouterProtocol {
+    internal var adapter: AppTabAdapter?
     
-    init(adapter: AppAdapter) {
+    init(adapter: AppTabAdapter?) {
         self.adapter = adapter
     }
 }
